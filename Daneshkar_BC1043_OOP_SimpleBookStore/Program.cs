@@ -32,6 +32,7 @@ namespace BookStore
             decimal discountedTotalPercentage = percentageDiscount.ApplyDiscount(total);
             Console.WriteLine($"Total after percentage discount: ${discountedTotalPercentage}");
 
+            Console.WriteLine("Nothing");
             // محاسبه و اعمال تخفیف به مبلغ ثابت
             IDiscount fixedAmountDiscount = new FixedAmountDiscount(15); // 15 دلار تخفیف
             decimal discountedTotalFixedAmount = fixedAmountDiscount.ApplyDiscount(total);
