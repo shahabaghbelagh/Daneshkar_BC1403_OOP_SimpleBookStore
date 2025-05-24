@@ -1,23 +1,17 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStore
+namespace BookStore.Models
 {
-    public class Category
+    class Category
     {
-        public string Title { get; set; }
+        public string BookCategory { get; set; }
 
-        public Category(string title)
+        public Category(string cat)
         {
-            Title = title;
-        }
-
-        public override string ToString()
-        {
-            return $"{Title} ";
+            BookCategory = cat;
         }
     }
 }
